@@ -9,7 +9,7 @@ namespace YourDomain.EFCore.Repositories;
 
 public static class DependencyContainer
 {
-	public static IServiceCollection AddEfCoreRepositories(
+	public static IServiceCollection AddYourDomainEfCoreRepositories(
 		this IServiceCollection services,
 		IConfiguration configuration,
 		string connectionString)
