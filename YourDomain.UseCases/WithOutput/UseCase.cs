@@ -1,16 +1,21 @@
-﻿using YourDomain.DTOs;
+﻿using SeedWork;
+
+using YourDomain.DTOs;
 using YourDomain.Model.Entities;
 using YourDomain.Repositories;
-using YourDomain.UseCasesPorts.UseCase.WithOutput;
 
-namespace YourDomain.UseCases;
+namespace YourDomain.UseCases.WithOutput;
 
-public class UseCaseWithOutput : IUseCaseInputPort
+public interface IUseCaseInputPort : IPort { }
+
+public interface IUseCaseOutputPort : IPort<OutputDto> { }
+
+public class UseCase : IUseCaseInputPort
 {
 	private readonly IUseCaseOutputPort _outputPort;
 	private readonly IEntityRepository _repository;
 
-	public UseCaseWithOutput(IUseCaseOutputPort outputPort, IEntityRepository repository)
+	public UseCase(IUseCaseOutputPort outputPort, IEntityRepository repository)
 	{
 		_outputPort = outputPort;
 		_repository = repository;

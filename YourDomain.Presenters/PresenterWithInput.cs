@@ -1,4 +1,5 @@
-﻿using YourDomain.UseCasesPorts.UseCase.WithInput;
+﻿
+using YourDomain.UseCases.WithInput;
 
 namespace YourDomain.Presenters;
 

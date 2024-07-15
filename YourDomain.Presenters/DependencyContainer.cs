@@ -7,10 +7,10 @@ public static class DependencyContainer
 	public static IServiceCollection AddExamplePresenters(
 		this IServiceCollection services)
 	{
-		services.AddScoped<UseCasesPorts.UseCase.Empty.IUseCaseOutputPort, PresenterEmpty>();
-		services.AddScoped<UseCasesPorts.UseCase.WithBoth.IUseCaseOutputPort, PresenterWithBoth>();
-		services.AddScoped<UseCasesPorts.UseCase.WithInput.IUseCaseOutputPort, PresenterWithInput>();
-		services.AddScoped<UseCasesPorts.UseCase.WithOutput.IUseCaseOutputPort, PresenterWithOutput>();
+		services.AddScoped<UseCases.Empty.IUseCaseOutputPort, PresenterEmpty>();
+		services.AddScoped<UseCases.WithBoth.IUseCaseOutputPort, PresenterWithBoth>();
+		services.AddScoped<UseCases.WithInput.IUseCaseOutputPort, PresenterWithInput>();
+		services.AddScoped<UseCases.WithOutput.IUseCaseOutputPort, PresenterWithOutput>();
 
 		return services;
 	}

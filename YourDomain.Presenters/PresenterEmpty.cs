@@ -1,4 +1,4 @@
-﻿using YourDomain.UseCasesPorts.UseCase.Empty;
+﻿using YourDomain.UseCases.Empty;
 
 namespace YourDomain.Presenters;
 

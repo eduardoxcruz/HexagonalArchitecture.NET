@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\YourDomain.UseCasesPorts\YourDomain.UseCasesPorts.csproj" />
+      <ProjectReference Include="..\YourDomain.UseCases\YourDomain.UseCases.csproj" />
     </ItemGroup>
 
 </Project>

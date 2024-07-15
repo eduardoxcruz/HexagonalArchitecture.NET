@@ -1,7 +1,7 @@
 ﻿using SeedWork;
 
 using YourDomain.DTOs;
-using YourDomain.UseCasesPorts.UseCase.WithBoth;
+using YourDomain.UseCases.WithBoth;
 
 namespace YourDomain.Presenters;
 
