@@ -4,7 +4,7 @@ namespace YourDomain.Controllers;
 
 public static class DependencyContainer
 {
-	public static IServiceCollection AddExampleControllers(
+	public static IServiceCollection AddYourDomainControllers(
 		this IServiceCollection services)
 	{
 		services.AddScoped<WithBoth.IMyController, WithBoth.Controller>();
