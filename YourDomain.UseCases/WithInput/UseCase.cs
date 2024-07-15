@@ -1,6 +1,8 @@
 ﻿using SeedWork;
 
 using YourDomain.DTOs;
+using YourDomain.Model.Entities;
+using YourDomain.Repositories;
 
 namespace YourDomain.UseCases.WithInput;
 
@@ -11,16 +13,18 @@ public interface IUseCaseOutputPort : IPort { }
 public class UseCase : IUseCaseInputPort
 {
 	private readonly IUseCaseOutputPort _outputPort;
+	private readonly IEntityRepository _repository;
 
-	public UseCase(IUseCaseOutputPort outputPort)
+	public UseCase(IUseCaseOutputPort outputPort, IEntityRepository repository)
 	{
 		_outputPort = outputPort;
+		_repository = repository;
 	}
 
 	public async ValueTask Handle(InputDto dto)
 	{
-		Console.WriteLine($"Message: {0}", dto.Data);
-		// Do something else
+		string data = await _repository.Create(new Entity($"Use Case.WithInput with input dto: {dto.Data}"));
+		Console.WriteLine(data);
 		await _outputPort.Handle();
 	}
 }
