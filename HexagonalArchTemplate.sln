@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YourDomain.Repositories", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YourDomain.UseCasesPorts", "YourDomain.UseCasesPorts\YourDomain.UseCasesPorts.csproj", "{C652B0E9-D052-4A89-B404-91B7515232F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YourDomain.UseCases", "YourDomain.UseCases\YourDomain.UseCases.csproj", "{4D9F7C09-E93C-44BC-9508-B49260213F4C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,7 @@ Global
 		{EE0D8A5A-B2A4-497F-84B2-52E62A45D391} = {C900F59D-5ADD-4842-9D51-EA6424FF67B2}
 		{5D7C47B8-B821-4F5A-A8C6-E2475D5EDED1} = {C900F59D-5ADD-4842-9D51-EA6424FF67B2}
 		{C652B0E9-D052-4A89-B404-91B7515232F8} = {C900F59D-5ADD-4842-9D51-EA6424FF67B2}
+		{4D9F7C09-E93C-44BC-9508-B49260213F4C} = {C900F59D-5ADD-4842-9D51-EA6424FF67B2}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{E9F70936-9ED4-45D7-ADB2-C16C965FFDC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -47,5 +50,9 @@ Global
 		{C652B0E9-D052-4A89-B404-91B7515232F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C652B0E9-D052-4A89-B404-91B7515232F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C652B0E9-D052-4A89-B404-91B7515232F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D9F7C09-E93C-44BC-9508-B49260213F4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D9F7C09-E93C-44BC-9508-B49260213F4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D9F7C09-E93C-44BC-9508-B49260213F4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D9F7C09-E93C-44BC-9508-B49260213F4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
