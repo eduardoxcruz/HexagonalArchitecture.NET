@@ -15,21 +15,22 @@ public class EntityRepository : IEntityRepository
 	
 	public ValueTask<string> Create(Entity obj)
 	{
-		throw new NotImplementedException();
+		return ValueTask.FromResult($"Called Create() method with data: {obj.Name}");
+		
 	}
 
 	public ValueTask<string> Update(Entity obj)
 	{
-		throw new NotImplementedException();
+		return ValueTask.FromResult($"Called Update() method with Data: {obj.Name}");
 	}
 
 	public ValueTask<string> Get(Entity obj)
 	{
-		throw new NotImplementedException();
+		return ValueTask.FromResult($"Called Get() method with data: {obj.Name}");;
 	}
 
 	public ValueTask<string> Delete(Entity obj)
 	{
-		throw new NotImplementedException();
+		return ValueTask.FromResult($"Called Delete() method with data: {obj.Name}");
 	}
 }
