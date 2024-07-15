@@ -5,11 +5,11 @@ using YourDomain.EFCore.DataContext.Models;
 
 namespace YourDomain.EFCore.DataContext;
 
-public partial class YourDbContext : DbContext
+public partial class EfDbContext : DbContext
 {
 	public virtual DbSet<EfModel> EfModels { get; set; }
 
-	public YourDbContext(DbContextOptions<YourDbContext> options) : base(options) { }
+	public EfDbContext(DbContextOptions<EfDbContext> options) : base(options) { }
 
 	protected override void OnModelCreating(ModelBuilder modelBuilder)
 	{
