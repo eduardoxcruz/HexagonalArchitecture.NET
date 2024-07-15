@@ -4,7 +4,7 @@ namespace YourDomain.UseCases;
 
 public static class DependencyContainer
 {
-	public static IServiceCollection AddExampleUseCases(
+	public static IServiceCollection AddYourDomainUseCases(
 		this IServiceCollection services)
 	{
 		services.AddScoped<Empty.IUseCaseInputPort, Empty.UseCase>();
