@@ -1,0 +1,41 @@
+<VSTemplate xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Version="3.0.0" Type="ProjectGroup">
+   <TemplateData>
+      <Name>NET 8 Hexagonal and Clean Architecture</Name>
+      <Description>NET 8 Hexagonal And Clean Architecture</Description>
+      <ProjectType>CSharp</ProjectType>
+      <LanguageTag>C#</LanguageTag>
+      <CreateNewFolder>true</CreateNewFolder>
+      <LocationField>Enabled</LocationField>
+   </TemplateData>
+   <TemplateContent>
+      <ProjectCollection>
+         <SolutionFolder Name="1. Enterprise Business Rules"> 
+            <ProjectTemplateLink ProjectName="$projectname$.Model" CopyParameters="true">YourDomain.Model\MyTemplate.vstemplate</ProjectTemplateLink>
+         </SolutionFolder>
+         <SolutionFolder Name="2. Application Business Rules"> 
+            <ProjectTemplateLink ProjectName="$projectname$.DTOs" CopyParameters="true">YourDomain.DTOs\MyTemplate.vstemplate</ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="$projectname$.Repositories" CopyParameters="true">YourDomain.Repositories\MyTemplate.vstemplate</ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="$projectname$.UseCases" CopyParameters="true">YourDomain.UseCases\MyTemplate.vstemplate</ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="SeedWork" CopyParameters="true">SeedWork\MyTemplate.vstemplate</ProjectTemplateLink>
+         </SolutionFolder>
+         <SolutionFolder Name="3. Interface Adapters">   
+            <ProjectTemplateLink ProjectName="$projectname$.Controllers" CopyParameters="true">YourDomain.Controllers\MyTemplate.vstemplate</ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="$projectname$.Presenters" CopyParameters="true">YourDomain.Presenters\MyTemplate.vstemplate</ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="$projectname$.IoC" CopyParameters="true">YourDomain.IoC\MyTemplate.vstemplate</ProjectTemplateLink>
+            <SolutionFolder Name="Gateways"> 
+               <SolutionFolder Name="Repositories"> 
+                  <ProjectTemplateLink ProjectName="$projectname$.EFCore.DataContext" CopyParameters="true">YourDomain.EFCore.DataContext\MyTemplate.vstemplate</ProjectTemplateLink>
+                  <ProjectTemplateLink ProjectName="$projectname$.EFCore.Repositories" CopyParameters="true">YourDomain.EFCore.Repositories\MyTemplate.vstemplate</ProjectTemplateLink>
+               </SolutionFolder>
+            </SolutionFolder>
+         </SolutionFolder>
+         <SolutionFolder Name="4. Frameworks And Drivers"> 
+            <SolutionFolder Name="Web">
+               <ProjectTemplateLink ProjectName="$projectname$.WebAPI" CopyParameters="true">YourDomain.WebAPI\MyTemplate.vstemplate</ProjectTemplateLink>
+            </SolutionFolder>
+         </SolutionFolder>
+         <SolutionFolder Name="5. Unit Tests"> 
+         </SolutionFolder>
+      </ProjectCollection>
+   </TemplateContent>
+</VSTemplate>
