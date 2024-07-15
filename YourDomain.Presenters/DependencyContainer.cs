@@ -4,7 +4,7 @@ namespace YourDomain.Presenters;
 
 public static class DependencyContainer
 {
-	public static IServiceCollection AddExamplePresenters(
+	public static IServiceCollection AddYourDomainPresenters(
 		this IServiceCollection services)
 	{
 		services.AddScoped<UseCases.Empty.IUseCaseOutputPort, PresenterEmpty>();
