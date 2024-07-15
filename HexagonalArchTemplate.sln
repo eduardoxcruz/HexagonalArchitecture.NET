@@ -36,6 +36,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{CDF7EC84-110
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YourDomain.WebAPI", "YourDomain.WebAPI\YourDomain.WebAPI.csproj", "{E4A784E0-43F6-40BD-BB66-201B3E00CFAB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Unit Tests", "5. Unit Tests", "{063CF7F2-303D-474E-9635-79A67202000F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
