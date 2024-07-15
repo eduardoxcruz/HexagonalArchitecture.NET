@@ -23,7 +23,7 @@ public class UseCase : IUseCaseInputPort
 
 	public async ValueTask Handle(InputDto dto)
 	{
-		string outData = await _repository.Update(new Entity(dto.Data));
+		string outData = await _repository.Update(new Entity($"Use Case.WithBoth with input dto: {dto.Data}"));
 		OutputDto outputDto = new OutputDto(outData);
 		await _outputPort.Handle(outputDto);
 	}
