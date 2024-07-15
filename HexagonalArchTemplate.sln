@@ -26,6 +26,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositorie
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YourDomain.EFCore.DataContext", "YourDomain.EFCore.DataContext\YourDomain.EFCore.DataContext.csproj", "{98457D86-286C-4E0E-B5AF-F56063692B93}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YourDomain.EFCore.Repositories", "YourDomain.EFCore.Repositories\YourDomain.EFCore.Repositories.csproj", "{0654D594-6828-4562-AF0E-D6CA17B911DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +44,7 @@ Global
 		{1E07BA39-75AD-4B19-8AF5-87E3B56A17DD} = {5ACB71A3-83D3-464D-9C22-618CABC547AE}
 		{4973F828-31BC-477F-BC03-BF41E6BBD9E4} = {1E07BA39-75AD-4B19-8AF5-87E3B56A17DD}
 		{98457D86-286C-4E0E-B5AF-F56063692B93} = {4973F828-31BC-477F-BC03-BF41E6BBD9E4}
+		{0654D594-6828-4562-AF0E-D6CA17B911DF} = {4973F828-31BC-477F-BC03-BF41E6BBD9E4}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{E9F70936-9ED4-45D7-ADB2-C16C965FFDC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -76,5 +79,9 @@ Global
 		{98457D86-286C-4E0E-B5AF-F56063692B93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98457D86-286C-4E0E-B5AF-F56063692B93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98457D86-286C-4E0E-B5AF-F56063692B93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0654D594-6828-4562-AF0E-D6CA17B911DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0654D594-6828-4562-AF0E-D6CA17B911DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0654D594-6828-4562-AF0E-D6CA17B911DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0654D594-6828-4562-AF0E-D6CA17B911DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
