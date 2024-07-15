@@ -23,7 +23,7 @@ public class UseCase : IUseCaseInputPort
 
 	public async ValueTask Handle()
 	{
-		string data = await _repository.Create(new Entity("A Name"));
+		string data = await _repository.Delete(new Entity($"Use Case.WithOutput"));
 		OutputDto outputDto = new OutputDto(data);
 		await _outputPort.Handle(outputDto);
 	}
