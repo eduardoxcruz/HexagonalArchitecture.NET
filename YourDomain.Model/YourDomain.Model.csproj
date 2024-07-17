@@ -8,6 +8,8 @@
 
     <ItemGroup>
       <Folder Include="Aggregates\" />
+      <Folder Include="Factories\" />
+      <Folder Include="Services\" />
       <Folder Include="ValueObjects\" />
     </ItemGroup>
 

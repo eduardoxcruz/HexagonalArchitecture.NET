@@ -2,7 +2,7 @@
 
 using YourDomain.DTOs;
 using YourDomain.Model.Entities;
-using YourDomain.Repositories;
+using YourDomain.Model.Repositories;
 
 namespace YourDomain.UseCases.WithOutput;
 

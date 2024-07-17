@@ -2,7 +2,7 @@
 
 using YourDomain.DTOs;
 using YourDomain.Model.Entities;
-using YourDomain.Repositories;
+using YourDomain.Model.Repositories;
 
 namespace YourDomain.UseCases.WithBoth;
 
@@ -24,7 +24,7 @@ public class UseCase : IUseCaseInputPort
 	public async ValueTask Handle(InputDto dto)
 	{
 		string outData = await _repository.Update(new Entity($"Use Case.WithBoth with input dto: {dto.Data}"));
-		OutputDto outputDto = new OutputDto(outData);
+		OutputDto outputDto = new(outData);
 		await _outputPort.Handle(outputDto);
 	}
 }

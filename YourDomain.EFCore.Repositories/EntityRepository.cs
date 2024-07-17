@@ -1,6 +1,6 @@
 ﻿using YourDomain.EFCore.DataContext;
 using YourDomain.Model.Entities;
-using YourDomain.Repositories;
+using YourDomain.Model.Repositories;
 
 namespace YourDomain.EFCore.Repositories;
 

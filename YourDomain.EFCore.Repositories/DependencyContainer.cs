@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 using YourDomain.EFCore.DataContext;
-using YourDomain.Repositories;
+using YourDomain.Model.Repositories;
 
 namespace YourDomain.EFCore.Repositories;
 

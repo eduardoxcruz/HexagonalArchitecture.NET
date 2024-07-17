@@ -8,7 +8,6 @@
 
     <ItemGroup>
       <ProjectReference Include="..\YourDomain.DTOs\YourDomain.DTOs.csproj" />
-      <ProjectReference Include="..\YourDomain.Repositories\YourDomain.Repositories.csproj" />
     </ItemGroup>
 
 </Project>

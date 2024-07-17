@@ -8,7 +8,6 @@
 
     <ItemGroup>
       <ProjectReference Include="..\YourDomain.EFCore.DataContext\YourDomain.EFCore.DataContext.csproj" />
-      <ProjectReference Include="..\YourDomain.Repositories\YourDomain.Repositories.csproj" />
     </ItemGroup>
 
 </Project>
