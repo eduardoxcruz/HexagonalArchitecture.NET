@@ -2,10 +2,8 @@
    <TemplateData>
       <Name>.NET 8+ Clean and Hexagonal Architecture Project Template</Name>
       <Description>
-         Template for creating a multi-platform solution based on Clean Architecture and Hexagonal Architecture principles. 
-         It includes predefined projects and folders for Enterprise Business Rules, Application Business Rules, 
-         Interface Adapters, Frameworks and Drivers, and Unit Tests.
-      </Description>    
+         Template for creating a multi-platform solution based on Clean Architecture and Hexagonal Architecture principles.
+      </Description>
       <ProjectType>CSharp</ProjectType>
       <LanguageTag>C#</LanguageTag>
       <CreateNewFolder>true</CreateNewFolder>
