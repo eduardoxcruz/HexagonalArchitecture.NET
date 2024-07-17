@@ -1,7 +1,11 @@
 <VSTemplate xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Version="3.0.0" Type="ProjectGroup">
    <TemplateData>
-      <Name>NET 8 Hexagonal and Clean Architecture</Name>
-      <Description>NET 8 Hexagonal And Clean Architecture</Description>
+      <Name>.NET 8+ Clean and Hexagonal Architecture Project Template</Name>
+      <Description>
+         Template for creating a multi-platform solution based on Clean Architecture and Hexagonal Architecture principles. 
+         It includes predefined projects and folders for Enterprise Business Rules, Application Business Rules, 
+         Interface Adapters, Frameworks and Drivers, and Unit Tests.
+      </Description>    
       <ProjectType>CSharp</ProjectType>
       <LanguageTag>C#</LanguageTag>
       <CreateNewFolder>true</CreateNewFolder>
@@ -14,11 +18,10 @@
          </SolutionFolder>
          <SolutionFolder Name="2. Application Business Rules"> 
             <ProjectTemplateLink ProjectName="$projectname$.DTOs" CopyParameters="true">YourDomain.DTOs\MyTemplate.vstemplate</ProjectTemplateLink>
-            <ProjectTemplateLink ProjectName="$projectname$.Repositories" CopyParameters="true">YourDomain.Repositories\MyTemplate.vstemplate</ProjectTemplateLink>
             <ProjectTemplateLink ProjectName="$projectname$.UseCases" CopyParameters="true">YourDomain.UseCases\MyTemplate.vstemplate</ProjectTemplateLink>
             <ProjectTemplateLink ProjectName="SeedWork" CopyParameters="true">SeedWork\MyTemplate.vstemplate</ProjectTemplateLink>
          </SolutionFolder>
-         <SolutionFolder Name="3. Interface Adapters">   
+         <SolutionFolder Name="3. Interface Adapters">
             <ProjectTemplateLink ProjectName="$projectname$.Controllers" CopyParameters="true">YourDomain.Controllers\MyTemplate.vstemplate</ProjectTemplateLink>
             <ProjectTemplateLink ProjectName="$projectname$.Presenters" CopyParameters="true">YourDomain.Presenters\MyTemplate.vstemplate</ProjectTemplateLink>
             <ProjectTemplateLink ProjectName="$projectname$.IoC" CopyParameters="true">YourDomain.IoC\MyTemplate.vstemplate</ProjectTemplateLink>
