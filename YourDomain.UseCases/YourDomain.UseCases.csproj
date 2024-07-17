@@ -7,6 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\SeedWork\SeedWork.csproj" />
       <ProjectReference Include="..\YourDomain.DTOs\YourDomain.DTOs.csproj" />
     </ItemGroup>
 
