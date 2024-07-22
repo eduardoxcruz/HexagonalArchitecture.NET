@@ -1,6 +1,5 @@
 ﻿using SeedWork;
 
-using YourDomain.DTOs;
 using YourDomain.Model.Entities;
 using YourDomain.Model.Repositories;
 

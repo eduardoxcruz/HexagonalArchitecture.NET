@@ -1,4 +1,4 @@
-﻿namespace YourDomain.DTOs;
+﻿namespace YourDomain.UseCases;
 
 public class OutputDto
 {

@@ -1,6 +1,6 @@
 ﻿using SeedWork;
 
-using YourDomain.DTOs;
+using YourDomain.UseCases;
 using YourDomain.UseCases.WithOutput;
 
 namespace YourDomain.Controllers.WithOutput;

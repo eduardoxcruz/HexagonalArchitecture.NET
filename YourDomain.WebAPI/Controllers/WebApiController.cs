@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
 using YourDomain.Controllers;
-using YourDomain.DTOs;
+using YourDomain.UseCases;
 
 namespace YourDomain.WebAPI.Controllers;
 

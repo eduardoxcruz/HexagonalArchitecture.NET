@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\YourDomain.DTOs\YourDomain.DTOs.csproj" />
+      <ProjectReference Include="..\YourDomain.Model\YourDomain.Model.csproj" />
     </ItemGroup>
 
 </Project>
