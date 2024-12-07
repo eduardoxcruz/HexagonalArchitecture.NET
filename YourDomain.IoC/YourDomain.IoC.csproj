@@ -8,7 +8,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\YourDomain.Controllers\YourDomain.Controllers.csproj" />
-      <ProjectReference Include="..\YourDomain.EFCore.Repositories\YourDomain.EFCore.Repositories.csproj" />
+      <ProjectReference Include="..\YourDomain.EFCore.DataContext\YourDomain.EFCore.DataContext.csproj" />
       <ProjectReference Include="..\YourDomain.Presenters\YourDomain.Presenters.csproj" />
       <ProjectReference Include="..\YourDomain.UseCases\YourDomain.UseCases.csproj" />
     </ItemGroup>
