@@ -12,18 +12,20 @@ public interface IUseCaseOutputPort : IPort<OutputDto> { }
 public class UseCase : IUseCaseInputPort
 {
 	private readonly IUseCaseOutputPort _outputPort;
-	private readonly IEntityRepository _repository;
+	private readonly IUnitOfWork _unitOfWork;
 
-	public UseCase(IUseCaseOutputPort outputPort, IEntityRepository repository)
+	public UseCase(IUseCaseOutputPort outputPort, IUnitOfWork unitOfWork)
 	{
 		_outputPort = outputPort;
-		_repository = repository;
+		_unitOfWork = unitOfWork;
 	}
 
 	public async ValueTask Handle()
 	{
-		string data = await _repository.Delete(new Entity($"Use Case.WithOutput"));
-		OutputDto outputDto = new OutputDto(data);
+		Entity entity = new("Entity name");
+		await _unitOfWork.Repository<Entity>().RemoveAsync(entity);
+		PagedList<Entity> entities = await _unitOfWork.Repository<Entity>().FindAsync();
+		OutputDto outputDto = new(entities);
 		await _outputPort.Handle(outputDto);
 	}
 }
