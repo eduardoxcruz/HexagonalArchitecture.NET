@@ -2,6 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 
 using YourDomain.Controllers;
+using YourDomain.EFCore.DataContext;
 using YourDomain.Presenters;
 using YourDomain.UseCases;
 
@@ -18,7 +19,8 @@ public static class DependencyContainer
 		services
 			.AddYourDomainUseCases()
 			.AddYourDomainPresenters()
-			.AddYourDomainControllers();
+			.AddYourDomainControllers()
+			.AddYourDomainEfCoreRepositories(configuration, connectionStringName);
 
 		return services;
 	}
