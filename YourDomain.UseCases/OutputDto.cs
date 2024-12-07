@@ -1,11 +1,15 @@
-﻿namespace YourDomain.UseCases;
+﻿using SeedWork;
+
+using YourDomain.Model.Entities;
+
+namespace YourDomain.UseCases;
 
 public class OutputDto
 {
-	public string Data { get; set; }
+	public PagedList<Entity> Data { get; set; }
 
-	public OutputDto(string data)
+	public OutputDto(PagedList<Entity> entities)
 	{
-		Data = data;
+		Data = entities;
 	}
 }
