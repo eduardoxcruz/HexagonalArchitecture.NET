@@ -1,7 +1,6 @@
 ﻿using SeedWork;
 
 using YourDomain.Model.Entities;
-using YourDomain.Model.Repositories;
 
 namespace YourDomain.UseCases.WithOutput;
 
