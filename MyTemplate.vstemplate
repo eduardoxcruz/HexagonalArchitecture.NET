@@ -14,8 +14,7 @@
          <SolutionFolder Name="1. Enterprise Business Rules"> 
             <ProjectTemplateLink ProjectName="$projectname$.Model" CopyParameters="true">YourDomain.Model\MyTemplate.vstemplate</ProjectTemplateLink>
          </SolutionFolder>
-         <SolutionFolder Name="2. Application Business Rules"> 
-            <ProjectTemplateLink ProjectName="$projectname$.DTOs" CopyParameters="true">YourDomain.DTOs\MyTemplate.vstemplate</ProjectTemplateLink>
+         <SolutionFolder Name="2. Application Business Rules">
             <ProjectTemplateLink ProjectName="$projectname$.UseCases" CopyParameters="true">YourDomain.UseCases\MyTemplate.vstemplate</ProjectTemplateLink>
             <ProjectTemplateLink ProjectName="SeedWork" CopyParameters="true">SeedWork\MyTemplate.vstemplate</ProjectTemplateLink>
          </SolutionFolder>
@@ -26,7 +25,6 @@
             <SolutionFolder Name="Gateways"> 
                <SolutionFolder Name="Repositories"> 
                   <ProjectTemplateLink ProjectName="$projectname$.EFCore.DataContext" CopyParameters="true">YourDomain.EFCore.DataContext\MyTemplate.vstemplate</ProjectTemplateLink>
-                  <ProjectTemplateLink ProjectName="$projectname$.EFCore.Repositories" CopyParameters="true">YourDomain.EFCore.Repositories\MyTemplate.vstemplate</ProjectTemplateLink>
                </SolutionFolder>
             </SolutionFolder>
          </SolutionFolder>
