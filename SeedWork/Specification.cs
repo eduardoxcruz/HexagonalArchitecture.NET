@@ -2,7 +2,7 @@
 
 namespace SeedWork;
 
-public class BaseSpecification<T> : ISpecification<T>
+public class Specification<T> : ISpecification<T>
 {
 	public int PageNumber { get; private set; }
 	public int PageSize { get; private set; }
@@ -16,7 +16,7 @@ public class BaseSpecification<T> : ISpecification<T>
 	public List<Expression<Func<T, object>>> ThenByExpressions { get; private set; }
 	public List<bool> ThenByDescendingFlags { get; private set; }
 
-	protected BaseSpecification()
+	protected Specification()
 	{
 		IncludeStrings = new List<string>();
 		Includes = new List<Expression<Func<T, object>>>();
@@ -24,7 +24,7 @@ public class BaseSpecification<T> : ISpecification<T>
 		ThenByDescendingFlags = new List<bool>();
 	}
 
-	public BaseSpecification(Expression<Func<T, bool>> criteria)
+	public Specification(Expression<Func<T, bool>> criteria)
 	{
 		IncludeStrings = new List<string>();
 		Includes = new List<Expression<Func<T, object>>>();
@@ -73,6 +73,7 @@ public class BaseSpecification<T> : ISpecification<T>
 	protected virtual void AddThenBy(Expression<Func<T, object>> thenByExpression)
     {
         ThenByExpressions.Add(thenByExpression);
+        ThenByDescendingFlags.Add(false);
     }
 
     protected virtual void AddThenByDescending(Expression<Func<T, object>> thenByExpression)
