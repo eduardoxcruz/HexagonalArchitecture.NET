@@ -64,9 +64,12 @@ public class WebApiController : ControllerBase
     
 	[HttpPost]
 	[Route("WithBoth")]
-	public async Task<IActionResult> GetBoth(InputDto inputDto)
+	public async Task<IActionResult> GetBoth([FromBody]string data, [FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 10)
 	{
-		OutputDto outputDto = await _controllerWithBoth.RunUseCase(inputDto);
+		OutputDto outputDto = await _controllerWithBoth.RunUseCase(new InputDto{
+			Data = data,
+			PagingParams = new() { PageNumber = pageNumber, PageSize = pageSize }
+		});
 		var metadata = new
 		{
 			outputDto.Data.TotalCount,
