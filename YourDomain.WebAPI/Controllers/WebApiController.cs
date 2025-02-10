@@ -1,3 +1,5 @@
+﻿using System.Text.Json;
+
 using Microsoft.AspNetCore.Mvc;
 
 using YourDomain.Controllers;
@@ -39,6 +41,16 @@ public class WebApiController : ControllerBase
 	public async Task<IActionResult> GetOutputDto()
 	{
 		OutputDto outputDto = await _controllerWithOutput.RunUseCase();
+		var metadata = new
+		{
+			outputDto.Data.TotalCount,
+			outputDto.Data.PageSize,
+			outputDto.Data.CurrentPage,
+			outputDto.Data.TotalPages,
+			outputDto.Data.HasNext,
+			outputDto.Data.HasPrevious
+		};
+		Response.Headers.Append("X-Pagination", JsonSerializer.Serialize(metadata));
 		return Ok(outputDto);
 	}
     
@@ -55,6 +67,16 @@ public class WebApiController : ControllerBase
 	public async Task<IActionResult> GetBoth(InputDto inputDto)
 	{
 		OutputDto outputDto = await _controllerWithBoth.RunUseCase(inputDto);
+		var metadata = new
+		{
+			outputDto.Data.TotalCount,
+			outputDto.Data.PageSize,
+			outputDto.Data.CurrentPage,
+			outputDto.Data.TotalPages,
+			outputDto.Data.HasNext,
+			outputDto.Data.HasPrevious
+		};
+		Response.Headers.Append("X-Pagination", JsonSerializer.Serialize(metadata));
 		return Ok(outputDto);
 	}
 }
