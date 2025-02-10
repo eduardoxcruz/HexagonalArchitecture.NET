@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 
 using YourDomain.Controllers;
 using YourDomain.UseCases;
@@ -7,6 +7,7 @@ namespace YourDomain.WebAPI.Controllers;
 
 [Route("api/Example")]
 [ApiController]
+[Produces("application/json")]
 public class WebApiController : ControllerBase
 {
 	private readonly YourDomain.Controllers.WithOutput.IMyController _controllerWithOutput;
