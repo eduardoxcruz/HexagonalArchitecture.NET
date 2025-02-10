@@ -1,4 +1,4 @@
-﻿using System.Linq.Expressions;
+using System.Linq.Expressions;
 
 using Microsoft.EntityFrameworkCore;
 
@@ -6,7 +6,7 @@ using SeedWork;
 
 namespace YourDomain.EFCore.DataContext;
 
-public class Repository<TEntity>(DbContext context) : IRepository<TEntity> where TEntity : class
+public class Repository<TEntity>(EfDbContext context) : IRepository<TEntity> where TEntity : class
 {
 	public async ValueTask<TEntity?> FindByIdAsync(object id)
 	{
