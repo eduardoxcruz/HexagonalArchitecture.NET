@@ -1,4 +1,4 @@
-using System.Linq.Expressions;
+﻿using System.Linq.Expressions;
 
 using Microsoft.EntityFrameworkCore;
 
@@ -59,12 +59,7 @@ public class Repository<TEntity>(EfDbContext context) : IRepository<TEntity> whe
 
 	public ValueTask UpdateRangeAsync(IEnumerable<TEntity> entities)
 	{
-		context.Set<TEntity>().AttachRange(entities);
-		
-		foreach (TEntity entity in entities)
-		{
-			context.Entry(entity).State = EntityState.Modified;
-		}
+		context.Set<TEntity>().UpdateRange(entities);
 		
 		return ValueTask.CompletedTask;
 	}
