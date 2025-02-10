@@ -8,19 +8,38 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddYourDomainServices(builder.Configuration, "YourEfDb");
+builder.Services.AddCors(options =>
+{
+	options.AddPolicy("DefaultPolicy", policy =>
+	{
+		policy
+			.WithOrigins(builder.Configuration.GetSection("Cors:Origins").Get<string[]>() ?? [])
+			.WithMethods(builder.Configuration.GetSection("Cors:Methods").Get<string[]>() ?? [])
+			.WithHeaders(builder.Configuration.GetSection("Cors:Headers").Get<string[]>() ?? [])
+			.AllowCredentials();
+	});
+
+	// Política de desarrollo (más permisiva)
+	options.AddPolicy("DevelopmentPolicy", policy =>
+	{
+		policy
+			.AllowAnyOrigin()
+			.AllowAnyMethod()
+			.AllowAnyHeader();
+	});
+});
+builder.Services.ConfigureSwaggerGen(options =>
+{
+	options.CustomSchemaIds(x => x.FullName);
+});
 
 WebApplication app = builder.Build();
-
-app.UseCors(policy =>
-{
-	policy.AllowAnyHeader()
-		.AllowAnyMethod()
-		.AllowAnyOrigin();
-});
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+	app.UseCors("DevelopmentPolicy");
+	app.UseExceptionHandler("/error-development");
 	app.UseSwagger();
 	app.UseSwaggerUI(options =>
 	{
@@ -28,9 +47,12 @@ if (app.Environment.IsDevelopment())
 		options.RoutePrefix = string.Empty;
 	});
 }
+else {
+	app.UseCors("DefaultPolicy");
+	app.UseExceptionHandler("/error");
+}
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 app.Run();
-
