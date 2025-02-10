@@ -33,8 +33,6 @@
                <ProjectTemplateLink ProjectName="$projectname$.WebAPI" CopyParameters="true">YourDomain.WebAPI\MyTemplate.vstemplate</ProjectTemplateLink>
             </SolutionFolder>
          </SolutionFolder>
-         <SolutionFolder Name="5. Unit Tests"> 
-         </SolutionFolder>
       </ProjectCollection>
    </TemplateContent>
 </VSTemplate>
