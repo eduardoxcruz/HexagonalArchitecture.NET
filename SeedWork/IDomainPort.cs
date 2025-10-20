@@ -1,6 +1,6 @@
 ﻿namespace SeedWork;
 
-public interface IDomainPort<in T>
+public interface IDomainPort<TOutput, TInput>
 {
-	ValueTask Handle(T dto);
+	ValueTask<TOutput> Handle(TInput input);
 }

@@ -7,9 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\ExampleDomain.Controllers\ExampleDomain.Controllers.csproj" />
       <ProjectReference Include="..\ExampleDomain.EfCore\ExampleDomain.EfCore.csproj" />
-      <ProjectReference Include="..\ExampleDomain.Presenters\ExampleDomain.Presenters.csproj" />
       <ProjectReference Include="..\ExampleDomain.UseCases\ExampleDomain.UseCases.csproj" />
     </ItemGroup>
 
