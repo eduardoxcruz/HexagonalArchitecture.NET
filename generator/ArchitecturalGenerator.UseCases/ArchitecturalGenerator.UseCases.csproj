@@ -10,4 +10,8 @@
       <ProjectReference Include="..\ArchitecturalGenerator.Model\ArchitecturalGenerator.Model.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="CreateNewBaseSolution\" />
+    </ItemGroup>
+
 </Project>
