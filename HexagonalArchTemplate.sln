@@ -4,31 +4,31 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Enterprise Business Rule
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Application Business Rules", "2. Application Business Rules", "{C900F59D-5ADD-4842-9D51-EA6424FF67B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YourDomain.Model", "YourDomain.Model\YourDomain.Model.csproj", "{E9F70936-9ED4-45D7-ADB2-C16C965FFDC8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleDomain.Model", "ExampleDomain.Model\ExampleDomain.Model.csproj", "{E9F70936-9ED4-45D7-ADB2-C16C965FFDC8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeedWork", "SeedWork\SeedWork.csproj", "{66ABC855-F6D0-445C-BE13-7CEBE986E3B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YourDomain.UseCases", "YourDomain.UseCases\YourDomain.UseCases.csproj", "{4D9F7C09-E93C-44BC-9508-B49260213F4C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleDomain.UseCases", "ExampleDomain.UseCases\ExampleDomain.UseCases.csproj", "{4D9F7C09-E93C-44BC-9508-B49260213F4C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Interface Adapters", "3. Interface Adapters", "{5ACB71A3-83D3-464D-9C22-618CABC547AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YourDomain.Presenters", "YourDomain.Presenters\YourDomain.Presenters.csproj", "{0131A4A8-1E0B-496A-A150-C817597917A7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleDomain.Presenters", "ExampleDomain.Presenters\ExampleDomain.Presenters.csproj", "{0131A4A8-1E0B-496A-A150-C817597917A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YourDomain.Controllers", "YourDomain.Controllers\YourDomain.Controllers.csproj", "{6E3EF30E-3730-4659-BFEA-8B0D8023BAF8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleDomain.Controllers", "ExampleDomain.Controllers\ExampleDomain.Controllers.csproj", "{6E3EF30E-3730-4659-BFEA-8B0D8023BAF8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{1E07BA39-75AD-4B19-8AF5-87E3B56A17DD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositories", "{4973F828-31BC-477F-BC03-BF41E6BBD9E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YourDomain.EFCore.DataContext", "YourDomain.EFCore.DataContext\YourDomain.EFCore.DataContext.csproj", "{98457D86-286C-4E0E-B5AF-F56063692B93}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleDomain.EfCore", "ExampleDomain.EfCore\ExampleDomain.EfCore.csproj", "{98457D86-286C-4E0E-B5AF-F56063692B93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YourDomain.IoC", "YourDomain.IoC\YourDomain.IoC.csproj", "{0625668D-1102-4993-B430-0581AB52043E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleDomain.IoC", "ExampleDomain.IoC\ExampleDomain.IoC.csproj", "{0625668D-1102-4993-B430-0581AB52043E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Frameworks And Drivers", "4. Frameworks And Drivers", "{005CD810-B4C9-495B-ABF5-D1D069CAFA9C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{CDF7EC84-110E-4888-AA2C-1D65267E54F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YourDomain.WebAPI", "YourDomain.WebAPI\YourDomain.WebAPI.csproj", "{E4A784E0-43F6-40BD-BB66-201B3E00CFAB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleDomain.WebApi", "ExampleDomain.WebApi\ExampleDomain.WebApi.csproj", "{E4A784E0-43F6-40BD-BB66-201B3E00CFAB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
