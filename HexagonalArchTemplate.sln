@@ -1,16 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleDomain.Model", "ExampleDomain.Model\ExampleDomain.Model.csproj", "{E9F70936-9ED4-45D7-ADB2-C16C965FFDC8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitecturalGenerator.Model", "ArchitecturalGenerator.Model\ArchitecturalGenerator.Model.csproj", "{E9F70936-9ED4-45D7-ADB2-C16C965FFDC8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeedWork", "SeedWork\SeedWork.csproj", "{66ABC855-F6D0-445C-BE13-7CEBE986E3B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleDomain.UseCases", "ExampleDomain.UseCases\ExampleDomain.UseCases.csproj", "{4D9F7C09-E93C-44BC-9508-B49260213F4C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitecturalGenerator.UseCases", "ArchitecturalGenerator.UseCases\ArchitecturalGenerator.UseCases.csproj", "{4D9F7C09-E93C-44BC-9508-B49260213F4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleDomain.EfCore", "ExampleDomain.EfCore\ExampleDomain.EfCore.csproj", "{98457D86-286C-4E0E-B5AF-F56063692B93}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitecturalGenerator.EfCore", "ArchitecturalGenerator.EfCore\ArchitecturalGenerator.EfCore.csproj", "{98457D86-286C-4E0E-B5AF-F56063692B93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleDomain.IoC", "ExampleDomain.IoC\ExampleDomain.IoC.csproj", "{0625668D-1102-4993-B430-0581AB52043E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitecturalGenerator.IoC", "ArchitecturalGenerator.IoC\ArchitecturalGenerator.IoC.csproj", "{0625668D-1102-4993-B430-0581AB52043E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleDomain.WebApi", "ExampleDomain.WebApi\ExampleDomain.WebApi.csproj", "{E4A784E0-43F6-40BD-BB66-201B3E00CFAB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitecturalGenerator.WebApi", "ArchitecturalGenerator.WebApi\ArchitecturalGenerator.WebApi.csproj", "{E4A784E0-43F6-40BD-BB66-201B3E00CFAB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Domain Layer", "1. Domain Layer", "{141A3327-79FD-4200-AEA7-03F579AFA861}"
 EndProject

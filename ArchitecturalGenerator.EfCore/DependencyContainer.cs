@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace ExampleDomain.EfCore;
+namespace ArchitecturalGenerator.EfCore;
 
 public static class DependencyContainer
 {

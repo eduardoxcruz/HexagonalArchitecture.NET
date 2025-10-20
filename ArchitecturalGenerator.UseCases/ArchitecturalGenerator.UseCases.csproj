@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\ExampleDomain.Model\ExampleDomain.Model.csproj" />
+      <ProjectReference Include="..\ArchitecturalGenerator.Model\ArchitecturalGenerator.Model.csproj" />
     </ItemGroup>
 
 </Project>

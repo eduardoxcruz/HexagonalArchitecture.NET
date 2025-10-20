@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ExampleDomain.WebApi.Controllers;
+namespace ArchitecturalGenerator.WebApi.Controllers;
 
 [ApiController]
 public class ErrorController : ControllerBase

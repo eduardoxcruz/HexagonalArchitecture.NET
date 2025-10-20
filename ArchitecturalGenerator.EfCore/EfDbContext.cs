@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 
-namespace ExampleDomain.EfCore;
+namespace ArchitecturalGenerator.EfCore;
 
 public partial class EfDbContext : DbContext
 {

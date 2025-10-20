@@ -7,8 +7,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\ExampleDomain.EfCore\ExampleDomain.EfCore.csproj" />
-      <ProjectReference Include="..\ExampleDomain.UseCases\ExampleDomain.UseCases.csproj" />
+      <ProjectReference Include="..\ArchitecturalGenerator.EfCore\ArchitecturalGenerator.EfCore.csproj" />
+      <ProjectReference Include="..\ArchitecturalGenerator.UseCases\ArchitecturalGenerator.UseCases.csproj" />
     </ItemGroup>
 
 </Project>

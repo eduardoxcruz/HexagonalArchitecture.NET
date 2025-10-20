@@ -1,4 +1,4 @@
-using ExampleDomain.IoC;
+using ArchitecturalGenerator.IoC;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 

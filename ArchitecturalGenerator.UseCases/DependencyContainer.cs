@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace ExampleDomain.UseCases;
+namespace ArchitecturalGenerator.UseCases;
 
 public static class DependencyContainer
 {

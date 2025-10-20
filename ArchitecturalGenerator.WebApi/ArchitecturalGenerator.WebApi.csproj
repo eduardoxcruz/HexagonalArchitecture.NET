@@ -12,7 +12,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\ExampleDomain.IoC\ExampleDomain.IoC.csproj" />
+      <ProjectReference Include="..\ArchitecturalGenerator.IoC\ArchitecturalGenerator.IoC.csproj" />
     </ItemGroup>
 
 </Project>

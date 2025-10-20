@@ -1,10 +1,10 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-using ExampleDomain.EfCore;
-using ExampleDomain.UseCases;
+using ArchitecturalGenerator.EfCore;
+using ArchitecturalGenerator.UseCases;
 
-namespace ExampleDomain.IoC;
+namespace ArchitecturalGenerator.IoC;
 
 public static class DependencyContainer
 {
