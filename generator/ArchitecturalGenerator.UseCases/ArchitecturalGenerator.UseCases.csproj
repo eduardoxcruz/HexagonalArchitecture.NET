@@ -16,7 +16,6 @@
       <Folder Include="CreateIoCProject\" />
       <Folder Include="CreateModelProject\" />
       <Folder Include="CreateNewDomainProjects\" />
-      <Folder Include="CreateSeedWorkProject\" />
       <Folder Include="CreateUseCasesProject\" />
       <Folder Include="CreateWebApiProject\" />
       <Folder Include="CreateWholeSolution\" />
