@@ -11,7 +11,15 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="CreateNewBaseSolution\" />
+      <Folder Include="AddNewUseCase\" />
+      <Folder Include="CreateEfCoreProject\" />
+      <Folder Include="CreateIoCProject\" />
+      <Folder Include="CreateModelProject\" />
+      <Folder Include="CreateNewDomainProjects\" />
+      <Folder Include="CreateSeedWorkProject\" />
+      <Folder Include="CreateUseCasesProject\" />
+      <Folder Include="CreateWebApiProject\" />
+      <Folder Include="CreateWholeSolution\" />
     </ItemGroup>
 
 </Project>
